@@ -227,7 +227,7 @@
     (function() {
         let pwd = 'fb6e02260291784be1be1ece60bbb8601f6a26e821ea36b1a2a5b3ced28baca7';
         if (pwd && pwd.length > 0) {
-            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+            if (pwd !== CryptoJS.SHA256(prompt('本文包含成人向内容，仅供年满 18 周岁 的读者阅读。请输入访问密码。输入密码即表示您已确认年满 18 周岁，并自愿阅读相关内容。')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
                 location.href = '/';
             }
